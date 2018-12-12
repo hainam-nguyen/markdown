@@ -1,21 +1,19 @@
-Ansible playbook for Rabbitmq installation on Debian/Ubuntu
+#Ansible playbook for Rabbitmq installation on Debian/Ubuntu
 
 -------------------------------------------------------------------------------------------------------------
-How to use:
+##How to use:
 
 ```
 ansible-playbook -i hosts rabbitmq.yaml
 ```
 
-
 -------------------------------------------------------------------------------------------------------------
-File detail
+##File detail
 
+**rabbitmq.yaml**
+> contains debian distribution and version of rabbitmq-server.
 
-
-rabbitmq.yaml contains debian distribution and version of rabbitmq-server.
-
-defaults/main.yaml contains default_tcp_listen_port and web_management_listen_port variables
+**defaults/main.yaml** contains default_tcp_listen_port and web_management_listen_port variables
 
 handlers/main.yaml contains restart rabbitmq-server function.
 
