@@ -1,4 +1,4 @@
-# Ansible playbook for Rabbitmq installation on Debian/Ubuntu
+# Rabbitmq installation on Debian/Ubuntu
 
 -------------------------------------------------------------------------------------------------------------
 ## How to use:
