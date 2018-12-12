@@ -8,20 +8,20 @@ ansible-playbook -i hosts rabbitmq.yaml
 ```
 
 -------------------------------------------------------------------------------------------------------------
-## File detail
+# Usage
 
-**./rabbitmq.yaml**
+**rabbitmq.yaml**
   > contains debian distribution and version of rabbitmq-server.
 
-**./defaults**
+**defaults**
   - main.yaml
     > contains default_tcp_listen_port and web_management_listen_port variables
 
-**./handlers**
+**handlers**
   - main.yaml
     > contains restart rabbitmq-server function.
 
-**./tasks**
+**tasks**
   - main.yaml
     > include specific setup file for specific os_family
 
