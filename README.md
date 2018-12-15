@@ -5,29 +5,29 @@
 
 1. Add/edit users' info in roles/rabbitmq/list_of_users.yaml
 
-Require variables:
+   >  Require variables:
 
-  - { name: '',
-      passwd: '',
-      tags: '',
-      status: '' }
+   >- { name: '',
+   >    passwd: '',
+   >    tags: '',
+   >    status: '' }
 
-    * name: name of users
-    * passwd: password
-    * tags: permission of a user, recommend:
-          *  administartor tag for a devops user
-          *  leave empty for a application user
-    * status:
-          * present (create)
-          * absent (remove)
+   >  * name: name of users
+   >  * passwd: password
+   >  * tags: permission of a user, recommend:
+   >        *  administartor tag for a devops user
+   >        *  leave empty for a application user
+   >  * status:
+   >        * present (to create)
+   >        * absent (to remove)
 
-
+2. Run ansible-playbook:
 ```
 ansible-playbook -i hosts rabbitmq.yaml
 ```
 
 -------------------------------------------------------------------------------------------------------------
-# Usage
+# Details
 
 **rabbitmq.yaml**
   > now has more options, can be defined with "task_name":
